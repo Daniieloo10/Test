@@ -52,7 +52,7 @@ class DefaultHeader extends Component {
         <Nav className="d-md-down-none" navbar>
           <NavItem className="px-3">
             <Link to="/dashboard" className="nav-link">
-              Dashboard
+              Home
             </Link>
           </NavItem>
         </Nav>
@@ -66,14 +66,8 @@ class DefaultHeader extends Component {
               <DropdownItem header tag="div" className="text-center">
                 <strong>Account Settings</strong>
               </DropdownItem>
-              <DropdownItem onClick={this.handleProfil}>
-               <Link to={`/users/${this.props.user.id}`} style={{textDecoration: 'none'}} > <i className="fa fa-user" /> 
-                Profile
-                </Link>
-              </DropdownItem>
-              <DropdownItem>
-                <i className="fa fa-wrench" /> Settings
-              </DropdownItem>
+             
+              
               <DropdownItem onClick={this.onLogoutClick}>
                 <i className="fa fa-lock" /> Logout
               </DropdownItem>
