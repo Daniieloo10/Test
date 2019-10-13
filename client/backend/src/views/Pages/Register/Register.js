@@ -156,10 +156,7 @@ class Register extends Component {
                         name="passwordRepeat"
                         onChange={this.onChange}
                         value={this.state.passwordRepeat}
-                      />
-                      <br>
-                      </br>
-                      
+                      />                       
                     </InputGroup>
                    <center> <div style={{ color: 'red' }}>{this.state.passwordErrorMsg}</div> </center>
                     <Button color="success" block>
