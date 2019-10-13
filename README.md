@@ -19,4 +19,4 @@ $ npm run server
 
 $ npm run client-back
 
-Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
+Navigate to [http://localhost:3000/login](http://localhost:3000/login). The app will automatically reload if you change any of the source files.
