@@ -28,7 +28,8 @@ class Register extends Component {
       message: '',
       visible: false,
       success:true,
-      passwordErrorMsg:''
+      passwordErrorMsg:'',
+      errorMsg : true
     };
   }
   componentWillReceiveProps(nextProps) {
@@ -41,13 +42,25 @@ class Register extends Component {
     }
   }
   onSubmit = e => {
+
+
+  
     e.preventDefault();
     const userData = {
       username: this.state.username,
       email: this.state.email,
       password: this.state.password
     };
+    
+    if(!this.state.errorMsg) {
     this.props.registerUser(userData);
+    setTimeout(() => {
+      this.props.history.push('/login')
+    }, 3000);
+    }
+    else {
+      console.log('false value')
+    }
   };
 
   onChange = e => {
@@ -62,6 +75,7 @@ class Register extends Component {
     if(e.target.name==="passwordRepeat" && e.target.value === this.state.password) {
       this.setState({
         passwordErrorMsg:'',
+        errorMsg:false
       })
     }
   };

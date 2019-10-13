@@ -130,6 +130,7 @@ class Login extends Component {
                         </Row>
                       ) : null}
                       <Row>
+                        
                         <Col xs="6">
                           <Button
                             color="primary"
@@ -139,11 +140,8 @@ class Login extends Component {
                             Login
                           </Button>
                         </Col>
-                        <Col xs="6" className="text-right">
-                          <Button color="link" className="px-0">
-                            Forgot password?
-                          </Button>
-                        </Col>
+                        
+                        
                       </Row>
                     </Form>
                   </CardBody>
@@ -156,7 +154,7 @@ class Login extends Component {
                     <div>
                       <h2>Sign up</h2>
                       <p>
-                        Welcome To YoonixTest , Please Sign up and let see my work.
+                        Welcome To My Auth App , Please Sign up and let you see my work.
                       </p>
                       <Link to="/register">
                         <Button
