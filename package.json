@@ -14,7 +14,7 @@
     "client-back": "cd client/backend && npm start",
     "server": "nodemon server.js",
     "start-back": "concurrently \"npm run server\" \"npm run client-back\"",
-    "start": "concurrently \"npm run server\" \"npm run client-back\" \"npm run client-front\""
+    "start": "concurrently \"npm run server\" \"npm run client-back\" "
   },
   "dependencies": {
     "@types/node": "^11.11.4",
